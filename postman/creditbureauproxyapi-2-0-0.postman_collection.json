@@ -1,0 +1,41 @@
+{
+  "info": {
+    "name": "creditbureauproxyapi-2-0-0 Postman Collection",
+    "description": "Operational baseline generated from observed Kong Konnect configuration.\n\nOpenAPI version: 3.0.3",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "noauth"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://api.northgate-cra.example/consumer/v2",
+      "type": "string",
+      "description": "Override with the base URL of the deployed Kong gateway."
+    }
+  ],
+  "item": [
+    {
+      "name": "creditbureauproxyapi-2-0-0--postcredit-reports",
+      "request": {
+        "method": "POST",
+        "description": "creditbureauproxyapi-2-0-0--postcredit-reports\n\nResponses:\n- default: Runtime response semantics are not observable from Kong configuration.",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/external/credit-bureau/2.0.0/credit-reports",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "external",
+            "credit-bureau",
+            "2.0.0",
+            "credit-reports"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

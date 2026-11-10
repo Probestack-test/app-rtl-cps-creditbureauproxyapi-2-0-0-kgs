@@ -1,0 +1,32 @@
+openapi: 3.0.3
+info:
+  title: creditbureauproxyapi-2-0-0
+  version: 1.0.0
+  description: Operational baseline generated from observed Kong Konnect configuration.
+servers:
+- url: https://api.northgate-cra.example/consumer/v2
+paths:
+  /external/credit-bureau/2.0.0/credit-reports:
+    post:
+      operationId: postExternalCreditBureau200CreditReports_4cdae89b
+      summary: creditbureauproxyapi-2-0-0--postcredit-reports
+      description: Inferred from Kong routing. Request and response business schemas are not observable.
+      x-kong-route-ids:
+      - b606cb5e-358b-4df7-900d-e1a93cadbf69
+      x-kong-plugin-summary:
+      - acl
+      - jwt
+      - rate-limiting
+      - request-transformer
+      responses:
+        default:
+          description: Runtime response semantics are not observable from Kong configuration.
+x-kong-source:
+  serviceId: 84cad0b1-5995-451d-b3f3-a724c4f150e0
+  snapshotFingerprint: 07cea5136085320a7d1a760a482942009d20bec1206588859bbf39aee15301c0
+  controlPlaneId: edb363b5-777a-445c-a190-5ca0d53c0c12
+x-kong-unmapped-routes:
+- routeId: 96ad7de2-c96f-46b6-bdd8-2bd3c79bc5d3
+  routeName: creditbureauproxyapi-2-0-0--getcredit-reports-reportid
+  reasons:
+  - REGEX_OR_UNSUPPORTED_PATH
